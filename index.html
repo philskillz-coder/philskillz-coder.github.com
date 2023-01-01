@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Refresh" content="0; url=https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-  </head>
-</html>
+	<head>    
+        <meta charset="utf-8">
+        <meta content="Philskillz&apos; links" property="og:title">
+        <meta content="/assets/profilepicture.png" property="og:image" />
+		<title>Philskillz&apos; links</title>
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+
+        <header>
+            <div class="Header">
+                <img id="profilepic" src="./assets/profilepicture.png" alt="Profile Picture" height="100" width="100">
+                <p class="big">Ich bin Phil</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="main">
+                <div class="container">
+                    <br>
+                    <div class="links">
+                        <a class="link" target="_blank" href="https://github.com/philskillz-coder">Github</a>
+                        <a class="link" target="_blank" href="https://instagram.com/philskillz.coder">Instagram</a>
+                        <a class="link" target="_blank" href="https://youtube.com/@philskz">Youtube</a>
+                        <a class="link" target="_blank" href="https://discord.gg/QjntPW9fHc">Discord</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+            width = $(document).width();
+            if (width>768){
+                num_nb = Math.round(Math.sqrt(width * 15));
+            }else{
+                num_nb = Math.round(Math.sqrt(width * 3));
+            }
+            console.log(num_nb)
+
+            particlesJS.load('particles-js', 'assets/particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
+    </body>
