@@ -54,15 +54,17 @@
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script>
             width = $(document).width();
-            if (width>768){
-                num_nb = Math.round(Math.sqrt(width * 15));
-            }else{
-                num_nb = Math.round(Math.sqrt(width * 3));
+            if (width > 768) {
+                particlesJS.load('particles-js', 'assets/particles.json', function() {
+                    console.log('callback - particles.js config loaded');
+            	});
+            } else {
+                $("body").css(
+		    {
+			"background": "rgb(2,0,36)",
+			"background": "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)"
+		    }
+		);
             }
-            console.log(num_nb)
-
-            particlesJS.load('particles-js', 'assets/particles.json', function() {
-                console.log('callback - particles.js config loaded');
-            });
         </script>
     </body>
