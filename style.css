@@ -45,10 +45,17 @@ li span {
     border-radius: 12px
 }
 
+@media only screen and (max-width: 728px) {
+    .link {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+  }
+  
+
 .link:hover{
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.233);
-    /* color: darkslategray; */
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-width: calc(var(--border-width)*2);
