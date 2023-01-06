@@ -28,17 +28,21 @@
     </head>
 
     <body>
+        
         <div id="particles-js"></div>
-        <div class="Header wrapper">
-            <div class="container center" style="width: fit-content;">
+        
+        <div class="Header container" style="width: fit-content;">
+            <div class="me-2" style="display:inline-block;vertical-align:top;">
                 <img src="./assets/profilepicture.png" alt="Profile Picture" height="200" style="aspect-ratio: 1">
-                <p class="big text-center" style="color: black;">Ich bin Phil!</p><br>
-
+            </div>
+            <div class="ms-2" style="display:inline-block;">
+                <h1 style="color: black;"><b>I am Phil&excl;</b></h1>
+                <p class=""></p>
                 <ul style="list-style: disc;">
-                    <li><span>&#128204; Heidelberg</span></li>
-                    <li><span>16 Jahre alt</span></li>
-                    <li><span>Programmierer</span></li>
-                    
+                    <li><span>&#128205; Heidelberg, Germany</span></li>
+                    <li><span>&#128290; 16 years old</span></li>
+                    <li><span>&#128421;&#65039;Programmer</span></li>
+                    <li><span>&#10060; Doesn&apos;t like HTML</span></li>
                 </ul>
             </div>
         </div>
@@ -46,12 +50,12 @@
         <main>
             <div class="main">
                 <div class="container">
-                    <br>
                     <div class="links">
-                        <a role="button" class="btn btn-outline-dark m-1 w-100 link" target="_blank" href="https://github.com/philskillz-coder">Github</a><br>
-                        <a role="button" class="btn btn-outline-dark m-1 w-100 link" target="_blank" href="https://instagram.com/philskillz.coder">Instagram</a><br>
-                        <a role="button" class="btn btn-outline-dark m-1 w-100 link" target="_blank" href="https://youtube.com/@philskz">Youtube</a><br>
-                        <a role="button" class="btn btn-outline-dark m-1 w-100 link" target="_blank" href="https://discord.gg/QjntPW9fHc">Discord</a><br>
+                        <a role="button" class="btn btn-outline-primary m-1 w-100 link" target="_blank" href="https://github.com/philskillz-coder">Github</a><br>
+                        <a role="button" class="btn btn-outline-primary m-1 w-100 link" target="_blank" href="https://instagram.com/philskillz.coder">Instagram</a><br>
+                        <a role="button" class="btn btn-outline-primary m-1 w-100 link" target="_blank" href="https://youtube.com/@philskz">Youtube</a><br>
+                        <a role="button" class="btn btn-outline-primary m-1 w-100 link" target="_blank" href="https://discord.gg/QjntPW9fHc">Discord</a><br>
+                        <a role="button" class="btn btn-outline-primary m-1 w-100 link" target="_blank" href="mailto:phil@notanactualemail.com">Contact me via mail</a><br>
                     </div>
                 </div>
             </div>
@@ -62,18 +66,20 @@
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script>
-            if ($(document).width() > 9728) {
+            if ($(document).width() > 728) {
                 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
                 particlesJS.load('particles-js', 'assets/particles.json', function() {
                     console.log('callback - particles.js config loaded');
                 });
+                
             } else {
-                $("body").css({
-                    "background-image": "url(\"assets/background.svg\")",
-                    "background-repeat": "no-repeat",
-                    "background-size": "cover",
-                    "background-attachment": "fixed"
-                });
+                // removed until i find a good background image
+                // $("body").css({
+                //     "background-image": "url(\"assets/background.svg\")",
+                //     "background-repeat": "no-repeat",
+                //     "background-size": "cover",
+                //     "background-attachment": "fixed"
+                // });
             }
         </script>
     </body>

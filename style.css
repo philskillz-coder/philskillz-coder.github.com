@@ -1,6 +1,7 @@
 body {
     height: 100%;
     overflow: hidden;
+    background: #2d2d2d;
 }
 
 .Header {
@@ -18,11 +19,6 @@ body {
 .big {
     font-size: xx-large;
     font-weight: bold;
-}
-
-.Header ul, .Header li {
-    margin: 0;
-    padding: 0;
 }
 
 li span {
@@ -44,13 +40,19 @@ li span {
     color: black;
     font-family: var(--font);
     font-size: 20px;
-    border-radius: .5em;
+    line-height: 35px;
+    height: 50px;
+    border-radius: 12px
 }
 
 .link:hover{
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.199);
-    color: darkslategray;
+    background-color: rgba(0, 0, 0, 0.233);
+    /* color: darkslategray; */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-width: calc(var(--border-width)*2);
+    line-height: 30px;
 }
 
 #particles-js {
