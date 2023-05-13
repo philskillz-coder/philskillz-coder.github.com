@@ -15,7 +15,6 @@ function calcTime(offset) {
   return nd;
 }
 
-alert(calcTime('Bombay', '+5.5'));
 window.addEventListener("load", () => {
   clock();
   function clock() {
