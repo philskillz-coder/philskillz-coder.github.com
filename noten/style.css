@@ -1,0 +1,49 @@
+html {
+    font-size: 14px;
+}
+
+:root {
+    --primary-color: #3E50B4;
+    --accent-color: #FF3F80;
+    --background: #212121;
+
+--primary-text: #FFFFFFFF;
+    --secondary-text: #B3FFFFFF;
+    --hint: #80FFFFFF;
+    --dividers: #1FFFFFFF;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        background: var(--background);
+    }
+}
+
+html {
+    background: var(--background);
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 60px;
+    background: var(--background);
+}
+
+.copyright_div {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+
+    width: 100%;
+    padding: 16px;
+
+    left: 0;
+    bottom: 0;
+
+    background-color: var(--primary-color);
+}
