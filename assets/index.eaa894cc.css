@@ -85,24 +85,29 @@ a{
         grid-template-columns:unset;
         grid-template-rows:60vw auto;
         gap:0;
-        padding:2em 0
+        padding:2em .5em;
     }
     .mainPage img{
         background:#1e202b;
-        border:2px solid #f9e2ff;
-        border-radius:20%
+        /*border:2px solid #f9e2ff;*/
+        border-radius:20%;
     }
     .imageContainer{
-        height:100%
+        height:100%;
+        margin-bottom: .5em;
     }
     .imageContainer p{
         position:unset!important;
-        color:inherit!important
+        color:inherit!important;
     }
     p{
         text-align:center;
-        margin:1em 1em 0
+        margin:1em 1em 0;
     }
 }
-/*# sourceMappingURL=index.cdd0aebe.css.map */
- 
+
+/* To whoever reads this: this is something I have to get off my chest */
+/* I think I'm in love with laura but I am not confident enough to tell her. */
+/* If I were to tell her and she'd say no we wouldn't be friends anymore and I like her too much to lose her */
+/* I hope you (reader) are doing fine. Good luck with everything */
+/* Also if you got a job for me: philipp.nikos@gmail.com thanks */

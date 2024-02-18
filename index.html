@@ -40,6 +40,15 @@
                 <h1>Yoo it's</h1>
                 <h2>Philskillz</h2>
             </section>
+            <div style="text-align: center">
+                <p></p>
+                <ul style="display: inline-block; text-align: left">
+                    <li style="list-style-type: none">Hey there. I am <span style="color: greenyellow">Phil</span>&excl;</li>
+                    <li>Enjoys trying new things out</li>
+                    <li>Crazy music taste</li>
+                    <li>Goal: being a Programmer</li>
+                </ul>
+            </div>
             <table class="links" role="presentation">
                 <tbody>
                 <tr>
@@ -62,24 +71,23 @@
                     <td><i class="bi bi-github"></i>&nbsp;</td>
                     <td><a href="https://github.com/philskillz-coder">philskillz-coder</a></td>
                 </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><hr></td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-envelope">&nbsp;</i></td>
+                    <td><a href="mailto://philipp.nikos@gmail.com">philipp.nikos@gmail.com</a></td>
+                </tr>
                 </tbody>
             </table>
-            <div style="text-align: center">
-                <p></p>
-                <ul style="display: inline-block; text-align: left">
-                    <li style="list-style-type: none">Hey there. I am <span style="color: greenyellow">Phil</span>&excl;</li>
-                    <li>Enjoys trying new things out</li>
-                    <li>Crazy music taste</li>
-                    <li>Goal: being a Programmer</li>
-                </ul>
-            </div>
         </div>
     </main>
 </div>
 <script>
     function updateTime(elementId) {
         const element = document.getElementById(elementId);
-    
+
         function update() {
             const now = new Date();
             const formatter = new Intl.DateTimeFormat('de', {
@@ -87,23 +95,23 @@
                 minute: '2-digit',
                 timeZoneName: 'short'
             });
-    
+
             const timeParts = formatter.formatToParts(now);
-    
+
             const hours = timeParts.find(part => part.type === 'hour').value;
             const minutes = timeParts.find(part => part.type === 'minute').value;
             const timeZoneName = timeParts.find(part => part.type === 'timeZoneName').value;
-    
+
             element.textContent = `${hours}:${minutes} ${timeZoneName}`;
         }
-    
+
         // Initial update
         update();
-    
+
         // Update the time every minute
         setInterval(update, 60000);
     }
-    
+
     // Call updateTime with element ID 'time-element'
     updateTime('time-element');
 </script>

@@ -85,11 +85,11 @@ a{
         grid-template-columns:unset;
         grid-template-rows:60vw auto;
         gap:0;
-        padding:2em 0
+        padding:2em 0.5em;
     }
     .mainPage img{
         background:#1e202b;
-        border:2px solid #f9e2ff;
+        /*border:2px solid #f9e2ff;*/
         border-radius:20%
     }
     .imageContainer{
