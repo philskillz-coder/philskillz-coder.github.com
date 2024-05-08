@@ -88,7 +88,8 @@ a{
         grid-template-columns:unset;
         grid-template-rows:60vw auto;
         gap:0;
-        padding:2em .5em;
+        padding:0em .5em;
+        padding-top: 1em;
     }
     .mainPage img{
         background:#1e202b;

@@ -79,13 +79,18 @@ a{
     .mainPage{
         margin:1em
     }
+    #l-content {
+        padding-bottom: 3px;
+    }
 }
 @media screen and (orientation:portrait){
     .mainPage{
         grid-template-columns:unset;
         grid-template-rows:60vw auto;
         gap:0;
-        padding:2em 0.5em;
+        padding:0em 0.5em;
+        padding-top: 2em;
+        padding-bottom: 0.5em;
     }
     .mainPage img{
         background:#1e202b;
@@ -102,6 +107,9 @@ a{
     p{
         text-align:center;
         margin:1em 1em 0
+    }
+    #l-content {
+        padding-bottom: 3px;
     }
 }
 /*# sourceMappingURL=index.cdd0aebe.css.map */
